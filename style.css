@@ -1,0 +1,99 @@
+a {
+    text-decoration: none;
+    
+}
+
+.page-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.page-first-part {
+    background-color: grey;
+    grid-column: 1 / 2;
+    padding: 35px 200px 60px 35px;
+}
+
+.page-second-part {
+    background-color: rosybrown;
+    grid-column: 2 / 3;
+}
+
+.page-quote {
+    margin-top: 80px;
+    font-size: 1.4rem;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.get-started-button {
+    border: none;
+    border-radius: 3px;
+    padding: 20px 40px 20px 40px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.navigation {
+   margin: 35px 40px 0 40px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.signup-button {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+.in-vision-logo {
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.in-part {
+  background-color: hsl(352, 86%, 65%);
+  border-radius: 5px;
+  float: left;
+}
+
+.in-part-text {
+  color: hsl(0, 0%, 100%);
+  padding: 8px 8px;
+  font-family: helvetica;
+  font-size: 1.6rem;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.vision-part {
+  float: right;
+}
+
+.vision-part-text {
+  color: hsl(352, 86%, 65%);  
+  font-family: helvetica;
+  font-size: 1.2rem;
+  padding: 14px 10px 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
