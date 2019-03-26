@@ -1,7 +1,10 @@
 a {
     text-decoration: none;
-    
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 
 .page-grid-layout {
     display: grid;
@@ -16,9 +19,21 @@ a {
 }
 
 .page-second-part {
-    background-color: rosybrown;
     grid-column: 2 / 3;
+    background-image: url("./unsplash-people-social.jpg");
+    background-size: cover;
+
 }
+
+.page-second-part-color-overlay {
+  background-color: hsl(299, 43%, 59%);
+  opacity: 0.5;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+
 
 .page-quote {
     margin-top: 80px;
@@ -41,6 +56,7 @@ a {
 
 .navigation {
    margin: 35px 40px 0 40px;
+   
 }
 
 .navigation-list {
@@ -56,7 +72,7 @@ a {
     border: none;
     border-radius: 3px;
     background-color: white;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 
