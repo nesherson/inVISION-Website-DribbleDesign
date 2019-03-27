@@ -1,10 +1,12 @@
 a {
     text-decoration: none;
     color: blue;
-    font-size: 20px;
-    font-weight: bold;
+  
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+}
 
 .page-grid-layout {
     display: grid;
@@ -22,14 +24,24 @@ a {
     grid-column: 2 / 3;
     background-image: url("./unsplash-people-social.jpg");
     background-size: cover;
-
+    
 }
 
 .page-second-part-color-overlay {
-  background-color: hsl(299, 43%, 59%);
-  opacity: 0.5;
+ 
+  background-color: hsla(299, 43%, 59%, 0.5);
   height: 100%;
   overflow: hidden;
+  
+}
+
+.play-btn {
+  width: 75px;
+  margin: 250px auto;
+}
+
+.play-btn img {
+  width: 100%;
   
 }
 
@@ -65,20 +77,20 @@ a {
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.signup-button {
+
+
+
+.signup-btn {
     padding: 10px 20px 10px 20px;
     border: none;
     border-radius: 3px;
-    background-color: white;
-    opacity: 0.4;
+    background-color: hsla(255, 0%, 100%, 0.4);
+    
 }
-
-
-
-
-
 
 .in-vision-logo {
   display: inline-block;
@@ -113,3 +125,77 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 1250px)
+{
+
+ .navigation-list-tour {
+   display: none;
+ }
+
+}
+
+@media (max-width: 1150px)
+{
+
+ .navigation-list-customers {
+   display: none;
+ }
+
+}
+
+@media (max-width: 1050px)
+{
+
+ .navigation-list-new-features {
+   display: none;
+ }
+
+}
+
+@media (max-width: 950px)
+{
+
+ .navigation-list-enterprise {
+   display: none;
+ }
+
+}
+
+@media (max-width: 850px)
+{
+
+ .navigation-list-blog {
+   display: none;
+ }
+
+}
+
+@media (max-width: 750px)
+{
+
+ .navigation-list-login {
+   display: none;
+ }
+
+ .play-btn {
+   display: none;
+ }
+
+}
+
+@media (max-width: 650px)
+{
+
+ .navigation-list-signup {
+   display: none;
+ }
+
+ .page-grid-layout {
+  
+  grid-template-columns: 1fr;
+  
+}
+
+
+
+}
