@@ -10,14 +10,14 @@ body {
 
 .page-grid-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
 }
 
 .page-first-part {
     background-color: grey;
     grid-column: 1 / 2;
-    padding: 35px 200px 60px 35px;
+    padding: 35px 200px 60px 15%;
 }
 
 .page-second-part {
@@ -64,6 +64,7 @@ body {
     padding: 20px 40px 20px 40px;
     font-weight: bold;
     font-size: 0.9rem;
+    background: linear-gradient(to right, hsl(259, 78%, 63%), hsl(259, 72%, 65%), hsl(259, 78%, 73%));
 }
 
 .navigation {
@@ -196,6 +197,12 @@ body {
   
 }
 
+.page-second-part {
+  display: none;
+}
 
+.page-first-part {
+  padding: 35px 200px 60px 8%;
+}
 
 }
