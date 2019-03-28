@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: blue;
+    color: hsl(0, 0%, 100%);
   
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .page-first-part {
-    background-color: grey;
+    /*background-color: grey;*/
     grid-column: 1 / 2;
     padding: 35px 200px 60px 15%;
 }
@@ -23,12 +23,10 @@ body {
 .page-second-part {
     grid-column: 2 / 3;
     background-image: url("./unsplash-people-social.jpg");
-    background-size: cover;
-    
+    background-size: cover; 
 }
 
 .page-second-part-color-overlay {
- 
   background-color: hsla(299, 43%, 59%, 0.5);
   height: 100%;
   overflow: hidden;
@@ -36,16 +34,14 @@ body {
 }
 
 .play-btn {
-  width: 75px;
-  margin: 250px auto;
+  width: 85px;
+  margin: 400px auto;
 }
 
 .play-btn img {
   width: 100%;
   
 }
-
-
 
 .page-quote {
     margin-top: 80px;
@@ -65,6 +61,7 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
     background: linear-gradient(to right, hsl(259, 78%, 63%), hsl(259, 72%, 65%), hsl(259, 78%, 73%));
+    color: hsl(0, 0%, 100%);
 }
 
 .navigation {
@@ -81,9 +78,6 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
 }
-
-
-
 
 .signup-btn {
     padding: 10px 20px 10px 20px;
@@ -124,6 +118,24 @@ body {
   padding: 14px 10px 10px 0;
   margin: 0;
   text-transform: uppercase;
+}
+
+.page-quote {
+  letter-spacing: 1px;
+}
+
+.page-description {
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  color: hsl(274, 1%, 51%);
+}
+
+.quote-design-better {
+  color: hsl(274, 72%, 35%);
+}
+
+.quote-faster-together {
+  color: hsl(274, 1%, 36%);
 }
 
 @media (max-width: 1250px)
@@ -203,6 +215,15 @@ body {
 
 .page-first-part {
   padding: 35px 200px 60px 8%;
+}
+
+.page-quote {
+  margin-bottom: 50px;
+}
+
+.page-description {
+  margin-bottom: 85px;
+
 }
 
 }
