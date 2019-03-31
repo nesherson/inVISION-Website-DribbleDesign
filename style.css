@@ -3,25 +3,30 @@ a {
   color: hsl(0, 0%, 100%);
 }
 
+
 body {
   font-family: "Raleway", sans-serif;
+  
 }
 
 .page-grid-layout {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 100vh;
+  
 }
 
 .page-first-part {
   grid-column: 1 / 2;
-  padding: 35px 200px 60px 15%;
+  /*padding: 35px 200px 60px 15%;*/
+  height: 100%;
 }
 
 .page-second-part {
   grid-column: 2 / 3;
   background-image: url("./unsplash-people-social.jpg");
   background-size: cover;
+  
 }
 
 .page-second-part-color-overlay {
@@ -32,7 +37,8 @@ body {
 
 .in-vision-logo {
   display: inline-block;
-  margin-bottom: 80px;
+  padding: 20px 30px;
+  
 }
 
 .in-part {
@@ -52,6 +58,7 @@ body {
 
 .vision-part {
   float: right;
+
 }
 
 .vision-part-text {
@@ -63,19 +70,27 @@ body {
   text-transform: uppercase;
 }
 
+.header {
+  border-bottom: 2px solid black;
+}
+
 .page-quote {
-  margin-top: 80px;
+  margin-top: 180px;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  margin-left: 25px;
+  padding-right: 150px;
 }
 
 .page-description {
   font-size: 1.2rem;
   text-align: left;
   margin-bottom: 45px;
+  margin-left: 25px;
+  padding-right: 150px;
   letter-spacing: 1px;
   line-height: 1.6rem;
-  color: hsl(274, 1%, 51%);
+  color: hsl(274, 1%, 35%);
 }
 
 .quote-design-better {
@@ -88,10 +103,11 @@ body {
   margin-top: 0;
 }
 
-.get-started-button {
+.get-started-btn {
   border: none;
   border-radius: 2px;
   padding: 20px 40px 20px 40px;
+  margin-left: 25px;
   font-weight: bold;
   font-size: 0.9rem;
   background: linear-gradient(
@@ -117,7 +133,7 @@ body {
   font-weight: bold;
 }
 
-.signup-btn {
+.nav-signup-btn {
   padding: 10px 25px 10px 25px;
   border: none;
   border-radius: 2px;
@@ -133,6 +149,25 @@ body {
 
 .play-btn img {
   width: 100px;
+}
+
+.get-started {
+  display: none;
+}
+
+.signup-btn {
+  background-color: hsl(274, 1%, 36%);
+  padding: 15px;
+  flex: 1 1 100px;
+  
+  text-align: center;
+}
+
+.login-btn {
+  background-color: hsl(259, 78%, 55%);
+  padding: 15px;
+  flex: 1 1 100px;
+  text-align: center;
 }
 
 @media (max-width: 1250px) {
@@ -166,6 +201,11 @@ body {
 }
 
 @media (max-width: 750px) {
+  
+}
+
+@media (max-width: 750px) {
+
   .navigation-list-login {
     display: none;
   }
@@ -173,30 +213,57 @@ body {
   .play-btn {
     display: none;
   }
-}
 
-@media (max-width: 650px) {
   .navigation-list-signup {
     display: none;
-  }
-
-  .page-grid-layout {
-    grid-template-columns: 1fr;
   }
 
   .page-second-part {
     display: none;
   }
 
-  .page-first-part {
-    padding: 35px 200px 60px 8%;
+  .page-grid-layout {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .in-vision-logo {
+    margin-left: 15px;
   }
 
   .page-quote {
     margin-bottom: 50px;
+    margin-left: 40px;
   }
 
   .page-description {
     margin-bottom: 85px;
+    margin-left: 40px;
+    max-width: 300px;
   }
+
+  .vision-part {
+    display: none;
+
+  }
+
+  .get-started {
+    display: flex;
+    position: relative;
+    top: 15%
+    
+  }
+  
+}
+
+@media (max-width: 450px) {
+
+ .page-description {
+    padding-right: 80px;
+  }
+
+  .page-quote {
+    padding-right: 80px;
+  }
+
 }
