@@ -13,21 +13,21 @@ html, body {
 .container-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 100vh;
+  min-height: 100vh;
   
 }
 
 .container-grid-first {
   grid-column: 1 / 2;
   /*padding: 35px 200px 60px 15%;*/
-  height: 100%;
+  
+  
 }
 
 .container-grid-second {
   grid-column: 2 / 3;
   background-image: url("./Assets/unsplash-people-social.jpg");
   background-size: cover;
-  
 }
 
 .color-wrapper {
@@ -289,11 +289,14 @@ html, body {
   .watch-video {
     display: flex;
     margin-left: 45px;
-    margin-bottom: 20vh;
+    
   }
 
   .get-started {
     display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
   }
 }
 
@@ -304,6 +307,12 @@ html, body {
   
   .page-description {
     padding-right: 40px;
+  }
+}
+
+@media (max-height: 750px) {
+  .page-quote {
+    margin-top: 150px;
   }
 }
 
