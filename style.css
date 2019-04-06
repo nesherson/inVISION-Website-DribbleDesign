@@ -28,6 +28,7 @@ html, body {
   grid-column: 2 / 3;
   background-image: url("./Assets/unsplash-people-social.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .color-wrapper {
